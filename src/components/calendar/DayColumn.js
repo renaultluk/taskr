@@ -17,9 +17,11 @@ const DayColumn = (props) => {
     
     return (
         <div 
+            id="test"
             style={{
                 position: "relative",
                 borderRight: "2px solid #888888",
+                flexGrow: 1,
             }}
         >
             {
@@ -28,7 +30,7 @@ const DayColumn = (props) => {
                         onClick={() => timeCellClick(index)}
                         style={{
                             height: props.timeHeight,
-                            width: 100,
+                            // width: 100,
                         }}
                     ></div>
                 ))

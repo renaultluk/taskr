@@ -5,8 +5,9 @@ const WeekCalendar = (props) => {
     const weekArr = Array(7).fill(0).map((v, index) => index + 1)
 
     return (
-        <div style={{
-            width: 700,
+        <div 
+        className="w-100"
+        style={{
             height: 600,
         }}>
             <div
@@ -20,8 +21,8 @@ const WeekCalendar = (props) => {
                     weekArr.map((value, index) => (
                         <div
                             style={{
-                                width: 100,
                                 display: "flex",
+                                flexGrow: 1,
                                 flexDirection: "column",
                                 alignItems: "center",
                                 borderRight: "2px solid #888888",

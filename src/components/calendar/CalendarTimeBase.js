@@ -6,9 +6,9 @@ const CalendarTimeBase = (props, { children }) => {
     
     return (
         <div
+            class="w-100"
             style={{
                 // overflow: "scroll",
-                width: 700,
                 height: 600,
             }}
         >

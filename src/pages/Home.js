@@ -78,11 +78,39 @@ const Home = () => {
                 />
             </div>
             <div className="w-75">
-                <TabMenu 
-                    menuOptions={calenderTabMenuOptions}
-                    selected={selectedCalendarTab}
-                    setSelected={setSelectedCalendarTab}
-                />
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                    }}
+                >
+                    <div
+                        onClick={() => {}}
+                        style={{
+                            cursor: "pointer",
+                        }}
+                    >
+                        Back
+                    </div>
+
+                    <div className="w-50">
+                        <TabMenu 
+                            menuOptions={calenderTabMenuOptions}
+                            selected={selectedCalendarTab}
+                            setSelected={setSelectedCalendarTab}
+                        />
+                    </div>
+
+                    <div
+                        onClick={() => {}}
+                        style={{
+                            cursor: "pointer",
+                        }}
+                    >
+                        Next
+                    </div>
+                </div>
 
                 <WeekCalendar 
                     timeHeight={35}
